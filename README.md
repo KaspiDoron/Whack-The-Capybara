@@ -1,16 +1,16 @@
-# Whack the Capybara
+# 🦫 Whack the Capybara
 
 **Whack the Capybara** is a fast-paced browser game where you try to whack as many capybaras as you can before time runs out. Play solo or compete with a friend in two-player mode.
 
-## Features
+## 🎮 Features
 
-- **Single-Player Mode:** Test your reflexes and aim for the target score.
-- **Two-Player Mode:** Challenge a friend in a head-to-head capybara whacking duel.
-- **Difficulty Levels:** Choose between Easy and Hard modes for a relaxed or intense experience.
-- **Countdown Timers:** Race against the clock to score as many points as possible.
-- **Quick Reset:** Easily reset the game and start a new round whenever you want.
+- 🕹️ **Single-Player Mode:** Test your reflexes and aim for the target score.
+- 👫 **Two-Player Mode:** Challenge a friend in a head-to-head capybara whacking duel.
+- 🎚️ **Difficulty Levels:** Choose between Easy and Hard modes for a relaxed or intense experience.
+- ⏱️ **Countdown Timers:** Race against the clock to score as many points as possible.
+- 🔄 **Quick Reset:** Easily reset the game and start a new round whenever you want.
 
-## How to Play
+## 🚀 How to Play
 
 1. **Choose Your Mode:** Select single-player or two-player mode.
 2. **Select Difficulty:** Pick Easy or Hard mode.
