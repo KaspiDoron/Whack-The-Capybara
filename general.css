@@ -1,0 +1,90 @@
+/* 
+#FFF * SYSTEMS: * #FFF
+
+--- 01 TYPOGRAPHY SYSTEM
+- Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Fonts: "Raleway" "Poppins" "Kanit"
+
+- Font weights:
+Default: 400
+Medium: 
+Semi-bold: 
+Bold: 
+
+- Line hieght:
+Default: 1
+Small: 
+Medium: 
+Large: 
+Pragraph default: 
+
+- Letter spacing:
+
+--- 02 COLORS 
+- Primary: 
+#fff9db #fff3bf #ffec99 #ffe066 #ffd43b #fcc419 #fab005 #f59f00
+#f08c00 #e67700 #d9480f #130900
+- Tints: 
+- Shades: 
+- Accents:
+- Grays: 
+
+--- 03 SACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+--- 04 SHADOWS
+  box-shadow: 
+
+--- 05 BORDER RADIUS
+Default: 
+Medium: 
+
+--- 06 WHITESPACE
+
+*/
+
+/*****************************************************************************************/
+/* GENERAL */
+/*****************************************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* Percentage of user's browser font-size setting
+  10px / 16 = 0.625 = 62.5% */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  /* overflow: hidden; */
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1;
+  font-weight: 600;
+  color: #130900;
+
+  /* TEMP */
+  min-height: 100vh;
+  background-image: linear-gradient(to top left, #e67700 0%, #ffec99 100%);
+  transition: all 0.3s;
+
+  /* CENTERING PAGE */
+  margin: 0 auto;
+  padding: 0.4rem 0 0 0;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.lessPad {
+  padding: 0.4rem 1.2rem;
+}

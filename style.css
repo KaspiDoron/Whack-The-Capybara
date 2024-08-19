@@ -1,0 +1,322 @@
+/*****************************************************************************************/
+/* HEADER */
+/*****************************************************************************************/
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: center;
+  font-family: "Kanit";
+}
+
+.prime-headline {
+  font-size: 6.2rem;
+}
+
+.sub-headline {
+  font-size: 2.4rem;
+}
+
+.sub-headline span {
+  margin-left: 0.4rem;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+}
+
+/*****************************************************************************************/
+/* MAIN */
+/*****************************************************************************************/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* BTNS */
+.btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: "Kanit", sans-serif;
+  border: none;
+  background: none;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  padding: 1.2rem 2.4rem;
+  border-radius: 15rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+
+  z-index: 8;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: rgba(255, 212, 83, 0.6);
+}
+
+.btn:active {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(0.5rem);
+}
+
+.btnModeClick {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: none;
+  padding: 1rem 2rem;
+}
+.btnModeClick:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.start-playing {
+  display: flex;
+  gap: 2.4rem;
+  position: relative;
+}
+
+.start-playing span {
+  position: absolute;
+  text-wrap: nowrap;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -2.8rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.hardMode {
+  background-image: linear-gradient(to top left, #d9480f 0%, #ffd43b 100%);
+}
+
+.easyMode {
+  background-image: linear-gradient(to top left, #f59f00 0%, #fff3bf 100%);
+}
+
+.btnRules-close {
+  position: absolute;
+  top: 0.4rem;
+  right: 2rem;
+  font-size: 8rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.modal {
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: #ffec99;
+  padding: 6rem 6rem 8rem 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.modal h1 {
+  font-size: 3.6rem;
+  margin-bottom: 3.6rem;
+}
+
+.modal strong {
+  font-size: 3rem;
+}
+
+.modal p {
+  line-height: 1.4;
+  word-spacing: 0.1rem;
+}
+
+/* TABLE */
+.table {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+
+.hole {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 100%;
+  background-color: black;
+}
+
+.popup {
+  background-image: url(/img/capybara-face.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  cursor: pointer;
+}
+
+/*****************************************************************************************/
+/* SCORES */
+/*****************************************************************************************/
+.scores {
+  display: flex;
+  margin-bottom: 1.2rem;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  font-size: 6.2rem;
+  margin: 2.4rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.8rem;
+  padding: 1.2rem 2.4rem;
+  background-color: #ffec99;
+  border-radius: 0.5rem;
+}
+
+.score-2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.8rem;
+  padding: 1.2rem 2.4rem;
+  background-color: #ffec99;
+  border-radius: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.score-value {
+  font-size: 8.6rem;
+}
+
+.active-player {
+  font-size: 7.2rem;
+  text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  font-weight: 800;
+}
+
+.winner {
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 100%;
+  z-index: 3;
+
+  text-align: center;
+  line-height: 1.5;
+
+  text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+  font-size: 10em;
+  color: #fff9db;
+  font-weight: 700;
+}
+
+.winner-player {
+  font-size: 15rem;
+  color: #ffe066;
+}
+
+.winner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 167, 74, 0.8);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+}
+
+.loser-single-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 9, 0, 0.8);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+}
+
+.winner-single {
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 100%;
+  z-index: 5;
+
+  text-align: center;
+  line-height: 1.5;
+
+  text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+  font-size: 14em;
+  color: #fff9db;
+  font-weight: 700;
+}
+
+.loser-single {
+  color: #fff9db;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  width: 100%;
+  z-index: 5;
+
+  text-align: center;
+  line-height: 1.5;
+
+  text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.6);
+  font-size: 14em;
+  font-weight: 700;
+}
+
+/*****************************************************************************************/
+/* TIMER */
+/*****************************************************************************************/
+.timer {
+  font-family: "Kanit", sans-serif;
+  font-size: 10rem;
+  margin: 0 auto;
+  padding-bottom: 2.4rem;
+}
+
+/*****************************************************************************************/
+/* FOOTER */
+/*****************************************************************************************/
+footer {
+  position: absolute;
+  bottom: 2rem;
+  left: 5rem;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <!-- ICONS LINKS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- WEB ICON -->
+    <link rel="icon" href="/img/logo-round.png" />
+
+    <title>Whack The Capybara</title>
+  </head>
+  <body>
+    <header class="titles">
+      <h1 class="prime-headline">Whack The Capybara</h1>
+      <p class="sub-headline">Here, we are hitting <span>Capybaras</span></p>
+    </header>
+
+    <main>
+      <section class="timer hidden">
+        <div id="seconds">00</div>
+      </section>
+
+      <div class="score score-2 hidden">
+        <p class="score-title-2">Player:</p>
+        <p class="score-value-2">0</p>
+      </div>
+
+      <section class="scores">
+        <div class="score score-0">
+          <p class="score-title-0">Player 1:</p>
+          <p class="score-value-0">0</p>
+        </div>
+        <div class="score score-1">
+          <p class="score-title-1">Player 2:</p>
+          <p class="score-value-1">0</p>
+        </div>
+      </section>
+
+      <section class="btns">
+        <div class="start-playing">
+          <span class="start-playing-label">Start Playing!</span>
+          <button class="btn btnSingle">
+            <ion-icon size="large" class="icon" name="person"></ion-icon>Single
+          </button>
+          <button class="btn btnDuo">
+            <ion-icon size="large" class="icon" name="people"></ion-icon>1 Vs 1
+          </button>
+        </div>
+
+        <button class="btn btnRules-open">
+          <ion-icon size="large" class="icon" name="menu"></ion-icon>Rules
+        </button>
+
+        <div class="modal hidden">
+          <button class="btnRules-close">&times;</button>
+          <h1>Rules for WHACK THE CAPYBARA game,</h1>
+          <p>
+            <strong>Single Game Rules:</strong> Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Voluptatum hic quaerat impedit soluta
+            nemo. Ab, quia ea voluptate voluptatibus, quibusdam quis eos itaque
+            doloremque numquam perspiciatis odio voluptatum explicabo at!
+          </p>
+          <br />
+          <br />
+          <p>
+            <strong>Duo Game Rules:</strong> First, you have to choose a game
+            mode easy/hard. Then, click the 1 Vs 1 button game. There could be
+            only 2 players, each have 9s (in the 'easy' mode, in the 'hard' it's
+            6s) to click as much as he can on the jumping capybaras. There is a
+            timer coundown and only 3s to change players. The first one that
+            reaching to 30pts is THE WINNER!
+          </p>
+        </div>
+
+        <button class="btn btnReset">
+          <ion-icon size="large" class="icon" name="refresh"></ion-icon> Reset
+        </button>
+        <div class="btn btnMode lessPad">
+          <ion-icon size="large" class="icon" name="invert-mode"></ion-icon>
+          <button class="btn btnMode btnModeClick">Mode</button>
+        </div>
+      </section>
+
+      <section class="table">
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+        <div class="hole"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Capybara, Inc.</p>
+    </footer>
+
+    <!-- MODAL/Loser OVERLAY -->
+    <div class="overlay hidden"></div>
+
+    <!-- DUO GAME WINNER OVERLAY -->
+    <div class="winner hidden">
+      PLAYER
+      <p class="winner-player">10</p>
+      IS THE WINNER!
+    </div>
+    <div class="winner-overlay hidden"></div>
+
+    <!-- SINGLE GAME WINNER/LOSER -->
+    <div class="winner-single hidden">You Won!</div>
+    <div class="loser-single hidden">You Lost!</div>
+    <div class="loser-single-overlay hidden">You Lost!</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
