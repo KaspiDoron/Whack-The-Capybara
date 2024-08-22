@@ -6,7 +6,7 @@
 let scores,
   activePlayer,
   holeRandom,
-  winningScore = 10; // for initGameDuo
+  winningScore = 20; // for initGameDuo
 
 let scoreSingle,
   singleWinningScore = 5; // for initSingle
@@ -250,7 +250,7 @@ function sessionPopup() {
     displayWinner();
   } else {
     // ! Choose seconds by the Easy/Hard mode
-    startCountdown("seconds", isEasyMode === true ? 8 : 6);
+    startCountdown("seconds", isEasyMode === true ? 6 : 4);
   }
 }
 
